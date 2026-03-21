@@ -1,0 +1,10 @@
+#Q: What happen when you on click on the run method of springboot application?
+Ans: Below steps happen internally when we click on run method of springboot application.
+  step-1: JVM starts and main() methos is executed
+  step-2: SpringApplication.run(MyApp.class , args)
+  step-3: springBoot detects:
+    - @SpringBootApplication on MyApp.class
+    - Which includes:
+        . @SpringBootConfiguration
+        . @ComponentScan
+        . @EnableAutoconfiguration
