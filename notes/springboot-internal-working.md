@@ -5,6 +5,6 @@ Ans: Below steps happen internally when we click on run method of springboot app
   step-3: springBoot detects:
     - @SpringBootApplication on MyApp.class
     - Which includes:
-        . @SpringBootConfiguration
-        . @ComponentScan
-        . @EnableAutoconfiguration
+        . @SpringBootConfiguration -> marks as @Configuration
+        . @ComponentScan -> scans current packages and sub-packages
+        . @EnableAutoconfiguration -> loads auto-configs from spring.factories
